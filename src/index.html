@@ -10,7 +10,11 @@
   </head>
   <body>
     <script type="text/javascript" src="./main.js"></script>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      onsubmit="onSubmit()"
+      method="POST"
+    >
       <fieldset class="field">
         <legend>Personal information</legend>
 
@@ -20,7 +24,8 @@
             type="text"
             id="surname"
             name="surname"
-            required>
+            required
+          >
         </label>
 
         <label for="name" class="form-field">
@@ -29,7 +34,8 @@
             type="text"
             id="name"
             name="name"
-            required>
+            required
+          >
         </label>
 
         <label for="old" class="form-field">
@@ -41,8 +47,8 @@
             value="12"
             min="12"
             max="100"
-            maxlength="3"
-            required>
+            required
+          >
         </label>
 
         <label for="date" class="form-field">
@@ -51,7 +57,8 @@
             type="date"
             id="date"
             name="date"
-            required>
+            required
+          >
         </label>
 
         <label for="agree">
@@ -60,7 +67,8 @@
             type="checkbox"
             id="agree"
             name="agree"
-            required>
+            required
+          >
         </label>
       </fieldset>
 
@@ -75,7 +83,8 @@
             id="mail"
             name="mail"
             placeholder="email@example.com"
-            required>
+            required
+          >
         </label>
 
         <label for="pas">
@@ -86,7 +95,8 @@
             name="pas"
             minlength="8"
             maxlength="32"
-            required>
+            required
+          >
         </label>
       </fieldset>
 
@@ -100,14 +110,16 @@
             <input
               type="radio"
               id="Yes"
-              name="cats">
+              name="cats"
+            >
             Yes
           </label>
           <label for="No">
             <input
               type="radio"
               id="No"
-              name="cats">
+              name="cats"
+            >
             No
           </label>
         </label>
@@ -118,7 +130,8 @@
             type="color"
             id="color"
             name="color"
-            required>
+            required
+          >
         </label>
 
         <label for="time" class="form-field" >
@@ -127,7 +140,8 @@
             type="time"
             id="time"
             name="time"
-            required>
+            required
+          >
         </label>
 
         <label for="cars" class="form-field">
@@ -136,7 +150,8 @@
           <select
             name="cars"
             id="cars"
-            multiple>
+            multiple
+          >
             <option value="bmw">BMW</option>
             <option value="audi">Audi</option>
             <option value="lada">Lada</option>
@@ -152,7 +167,8 @@
             min="0"
             max="10"
             value="0"
-            required>
+            required
+          >
         </label>
       </fieldset>
 
@@ -160,13 +176,14 @@
 
         <legend>Additional info:</legend>
 
-        <label for="Coments" class="form-field" >
+        <label for="Coments" class="form-field">
           Coments:
           <textarea
             name="Coments"
             id="Coments"
             cols="30"
-            rows="2">
+            rows="2"
+          >
           </textarea>
         </label>
 
@@ -178,10 +195,7 @@
           </select>
         </label>
       </fieldset>
-      <button
-        type="submit"
-        class="field"
-        onsubmit="onSubmit()">
+      <button type="submit" class="field">
         Submit
       </button>
     </form>
